@@ -9,17 +9,71 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-        }
-        h1 {
+            line-height: 1.6;
             color: #333;
         }
-        p {
-            line-height: 1.6;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .mission-statement {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to New Society</h1>
-    <p>This is a simple webpage for our new society project.</p>
+    <div class="container">
+        <h1>Welcome to New Society</h1>
+        
+        <div class="mission-statement">
+            <h2>Our Mission</h2>
+            <p>To create a more connected and sustainable society through innovation and collaboration.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Innovation</h3>
+                <p>Pushing boundaries and exploring new possibilities for societal advancement.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sustainability</h3>
+                <p>Creating solutions that benefit both present and future generations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Community</h3>
+                <p>Building strong connections and fostering meaningful relationships.</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Reach out to learn more about how you can be part of the new society.</p>
+        </div>
+    </div>
 </body>
 </html>
